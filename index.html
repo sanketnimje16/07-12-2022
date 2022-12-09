@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Object Property</title>
+        <link href="./Css/style.css" rel=""/>
+        <script>
+            //before the closing of head tag
+        </script>
+    </head>
+    <body>
+        <h1> Java Script Datatype</h1>
+        <ul>
+            <li>Js Object</li>
+        </ul>
+        <h1 class="mystudent3">Content Area</h1>
+        <script src="./Js/script.js"></script>
+        <script>
+            //before the closing of body tag
+            let Student1= {
+                //p:v
+                name:"Sanket",
+                lastname:"Nimje",
+            };
+            var _Student2={
+                //1. property:value
+                name:"Virat",
+                lastname:"Kohli"
+                //2. something sir tought about this
+            };
+            const $Student3={
+                //Property:value
+                name:"Rohit",
+                lastname:"Sharma"
+            };
+            var student4={
+                //Property:value
+                name:"Michell",
+                lastname:"Starc"
+            };
+        </script>
+        <script>
+            // 1st Method to display Output which is console.log
+            console.log(Student1.name);
+            console.log(_Student2.lastname);
+            console.log(Student1.name +" "+ Student1.lastname) //Concatination operator
+            console.log($Student3.lastname+` `+$Student3.name);
+            console.log("Hello "+_Student2.name+' '+Student1.lastname) // i have selected different variable and implemented it.
+            //2nd Method is Window.alert to Display the Output
+            window.alert("Hello "+Student1.name+" "+$Student3.lastname) // i have used Window.alert to display the output.
+            //3rd Method is element.innerHTML
+            //document.queryselector(select h1 tag which is class is mystudent3).innerHTML = object[value];
+
+            //objectName[expression] obeject is variable name
+
+            //Object = $Student    and    value = "name"
+            let n = "name";
+            let s = "lastname"
+            document.querySelector('h1.mystudent3').innerHTML ="Hello"+" "+ $Student3[n]+' '+$Student3[s];
+            // 4th method is Document.write();
+            document.write('<strong>'+student4["name"]+" "+student4.lastname+'</strong>')
+            
+        </script>
+    </body>
+</html>
